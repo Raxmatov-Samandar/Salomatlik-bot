@@ -1,0 +1,19 @@
+{
+  "name": "clinic-bot-pro",
+  "version": "3.0.0",
+  "description": "Production-ready clinic Telegram bot with AI consultation, SQLite persistence, rate limiting, and i18n (UZ/RU)",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "dev": "node --watch src/bot.js",
+    "db:reset": "node -e \"require('./src/db').reset()\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "comments": "Using node:sqlite (built-in, Node 22.5+); no native deps needed."
+}
