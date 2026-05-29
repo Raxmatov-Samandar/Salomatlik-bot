@@ -1,0 +1,6 @@
+# Railway nixpacks: force Node 22+ for built-in node:sqlite
+[phases.setup]
+nixPkgs = ["nodejs_22"]
+
+[start]
+cmd = "npm start"
